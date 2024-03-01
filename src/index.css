@@ -55,16 +55,18 @@ p{
     border-radius: 6px;
     box-shadow: rgba(0,0,82,0.15) 0 2px 4px;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .input-container input{
     border: none;
-    padding: 13px 14px;
+    padding: 16px 18px;
     box-sizing: border-box;
     font-size: 15px;
     outline: none;
     width: 90%;
     font-weight: 200;
+    
 }
 
 .input-container input::placeholder{
