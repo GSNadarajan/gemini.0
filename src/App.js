@@ -34,7 +34,7 @@ const App = () => {
           "Content-Type": "application/json",
         },
       };
-      const response = await fetch("http://localhost:8000/gemini", options);
+      const response = await fetch("https://gemini-backend.vercel.app/gemini", options);
       const data = await response.text();
       console.log(data);
       setChatHistory((oldChatHistory) => [
@@ -65,7 +65,7 @@ const App = () => {
     <div className="app">
       <h2 style={{ fontSize: "20px", text: "center" }}>
         Gemini-pro model{" "}
-        <span>
+        {/* <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -77,7 +77,7 @@ const App = () => {
           >
             <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
           </svg>
-        </span>
+        </span> */}
       </h2>
       <p></p>
       <div className="input-container">
