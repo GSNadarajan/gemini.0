@@ -34,7 +34,7 @@ const App = () => {
           "Content-Type": "application/json",
         },
       };
-      const response = await fetch("https://gemini-backend.vercel.app/gemini", options);
+      const response = await fetch("http://localhost:8000/gemini", options);
       const data = await response.text();
       console.log(data);
       setChatHistory((oldChatHistory) => [
